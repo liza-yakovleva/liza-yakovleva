@@ -245,6 +245,7 @@ background-color: rgba(0, 0, 0, 0);
   height: 650px;
   float: left;
   margin: 10px;
+  border: 1px solid white;
 }
 .img {
   height: 180px;
@@ -322,20 +323,14 @@ background-color: rgba(0, 0, 0, 0);
 border: 1px solid white;
 text-transform: uppercase;
 }
-.s-bot {
-width: 210px;
-height: 50px;
-font-size: 21px;
-font-family: 'Roboto',
-sans-serif;
-font-weight: 500;
-color: white;
+.f-bot:hover {
 background-color: rgba(86, 141, 198, 0.75);
 border: none;
-text-transform: uppercase;
-background-image: url("../img/icon\ \(2\).png");
-background-repeat: no-repeat;
-background-position: 93%;
+}
+.s-bot {
+  background-image: url("../img/icon\ \(2\).png");
+  background-repeat: no-repeat;
+  background-position: 93%;
 }
 
 
