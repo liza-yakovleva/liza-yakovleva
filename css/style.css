@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/patt.png");
+  background-image: url("../img/back-ground.png");
 }
 
 * {
@@ -21,8 +21,7 @@ body {
 .row:after,
 .menu:after,
 .search:after,
-.basket:after
-{
+.header-basket:after {
   clear: both;
   content: "";
   display: block;
@@ -31,12 +30,16 @@ body {
 .col-md-3 {
   width: 25%;
 }
+.col-md-4 {
+  width: calc(33.33%-45px);
+}
 
 .col-md-6 {
   width: 50%;
 }
+
 .col-md-9 {
-   width: 75%;
+  width: 75%;
 }
 
 [class*="col-"] {
@@ -58,7 +61,7 @@ body {
   float: left;
   width: 25%;
   border-left: 1px solid rgb(44, 113, 184);
- 
+
 }
 
 .menu li:last-child {
@@ -83,18 +86,22 @@ body {
 
 
 .menu>li {
-  
+
   position: relative;
- 
+
 }
 
 .menu>li:hover>a {
-    background-color: #2c71b8;
-    color: #ffffff;
-    background-image: url("../img/arr-w.png");
-    background-repeat: no-repeat;
-    background-position: 95%;
+  background-color: #2c71b8;
+  color: #ffffff;
+ 
 }
+.menu>li:hover>.menu__arrow-white {
+ background-image: url("../img/arrow-white.png");
+ background-repeat: no-repeat;
+ background-position: 95%;
+}
+
 .in-menu {
   visibility: hidden;
   opacity: 0;
@@ -104,16 +111,16 @@ body {
   transition: .3s linear;
 
 }
+
 .in-menu a {
-background-color: rgb(44, 113, 184);
-color: white;
+  background-color: rgb(44, 113, 184);
+  color: white;
 }
-.in-menu
-a:hover
- {
+
+.in-menu a:hover {
   color: rgb(44, 113, 184);
   background-color: white;
-  }
+}
 
 
 .in-menu li {
@@ -127,15 +134,15 @@ a:hover
 
 
 
-.arrow {
+.menu__arrow {
   width: 15px;
   height: 15px;
   position: absolute;
- background-image: url("../img/arr-b.png");
- background-position: center;
- background-repeat: no-repeat;
-  transform: translate(800%, -210%); 
-   
+  background-image: url("../img/arrow-blue.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(800%, -210%);
+
 }
 
 nav li:hover>.in-menu {
@@ -169,48 +176,49 @@ nav li:hover>.in-menu {
   font-weight: 300;
 }
 
-.ic-serch {
+.string-search {
   width: 30px;
   height: 30px;
   background-color: rgb(44, 113, 184);
   border: none;
   cursor: pointer;
   position: absolute;
- 
+
   transform: translate(11%, 13.5%);
-  background-image: url("../img/icon\ \(4\).png");
+  background-image: url("../img/search.png");
   background-position: center;
   background-repeat: no-repeat;
 }
-.button{
+
+.button {
   width: 40px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0);
-   border-top: 1px solid rgb(44, 113, 184);
-   border-left: 1px solid rgba(0, 0, 0, 0);
-   border-bottom: 1px solid rgb(44, 113, 184);
-   border-right: 1px solid rgb(44, 113, 184);
- transform: translate(390%, 12.5%);
- position: absolute;
+  border-top: 1px solid rgb(44, 113, 184);
+  border-left: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgb(44, 113, 184);
+  border-right: 1px solid rgb(44, 113, 184);
+  transform: translate(390%, 12.5%);
+  position: absolute;
 }
 
 
 
-.basket {
+.header-basket {
   width: 40px;
   height: 40px;
   background-color: rgb(255, 255, 255);
- 
+
   float: right;
-  background-image: url("../img/icon\ \(1\).png");
+  background-image: url("../img/basket-header-blue.png");
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 5px;
   position: relative;
- 
+
 }
 
-.number {
+.header-basket__number {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -222,152 +230,163 @@ nav li:hover>.in-menu {
   transform: translate(-50%, -50%);
   position: absolute;
 }
-section {
+
+.slider {
   height: 400px;
- background-color: rgb(44, 113, 184);
-  
+  background-color: rgb(44, 113, 184);
+
 }
+
 aside {
   height: 800px;
   background-color: rgba(255, 255, 255, 0.25);
   float: left;
-  
 
-}
-article {
-height: 100%;
-background-color: rgba(0, 0, 0, 0);
 
 }
 
-.first {
+.section {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+.product-list-item {
   width: 270px;
   height: 650px;
   float: left;
   margin: 10px;
   border: 1px solid white;
 }
-.img {
+
+.product-list-item__img {
   height: 180px;
   background-color: rgba(255, 255, 255, 0.75);
   line-height: 250px;
- text-align: center;
-position: relative;
-
-  
+  text-align: center;
+  position: relative;
 }
 
-.icon-8 {
-height: 30px;
-width: 30px;
-background-image: url("../img/icon\ \(8\).png");
-background-repeat: no-repeat;
-background-position: center center;
-position: absolute;
-border: 1px solid rgb(44, 113, 184);
-transform: translate(775%, -810%);
+.product-list-item__item-scale {
+  height: 30px;
+  width: 30px;
+  background-image: url("../img/item-scale-blue.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  border: 1px solid rgb(44, 113, 184);
+  transform: translate(775%, -810%);
 }
-.icon-8:hover {
-  background-image: url("../img/icon\ \(6\).png");
- background-color: rgb(44, 113, 184);
+
+.product-list-item__item-scale:hover {
+  background-image: url("../img/item-scale-white.png");
+  background-color: rgb(44, 113, 184);
 }
-.icon-5 {
+
+.product-list-item__item-chosen {
   height: 30px;
   width: 30px;
   border: 1px solid rgb(44, 113, 184);
-  background-image: url("../img/icon\ \(5\).png");
+  background-image: url("../img/item-chosen-blue.png");
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
   transform: translate(775%, -690%);
 }
-.icon-5:hover {
-  background-image: url("../img/icon\ \(7\).png");
+
+.product-list-item__item-chosen:hover {
+  background-image: url("../img/item-chosen-white.png");
   background-color: rgb(44, 113, 184);
 }
-.tex {
+
+.product-description {
   height: 260px;
-   background-color: rgba(44, 113, 184, 0.75);
-   padding: 15px;
+  background-color: rgba(44, 113, 184, 0.75);
+  padding: 15px;
 }
-.price {
+
+.product-description__price {
   height: 70px;
   background-color: rgba(44, 113, 184, 0.75);
   font-size: 48px;
   font-family: 'Roboto',
-  sans-serif;
+    sans-serif;
   font-weight: 700;
   color: white;
   text-align: center;
 }
-[id*="p-"] {
+
+[id*="index-"] {
   font-size: 28px;
   display: inline-block;
   transform: translate(20%, -40%);
 }
-.submit {
+
+.product-details-add {
   height: 140px;
   background-color: rgba(44, 113, 184, 0.75);
   text-align: center;
 }
-.f-bot {
-width: 210px;
-height: 50px;
-margin-bottom: 10px;
-font-size: 21px;
-font-family: 'Roboto',
-sans-serif;
-font-weight: 700;
-color: white;
-background-color: rgba(0, 0, 0, 0);
-border: 1px solid white;
-text-transform: uppercase;
+
+.product-details-add__det-add {
+  width: 210px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 21px;
+  font-family: 'Roboto',
+    sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  text-transform: uppercase;
 }
-.f-bot:hover {
-background-color: rgba(86, 141, 198, 0.75);
-border: none;
+
+.product-details-add__det-add:hover {
+  background-color: rgba(86, 141, 198, 0.75);
+  border: none;
 }
-.s-bot {
-  background-image: url("../img/icon\ \(2\).png");
+
+.product-details-add__basket-white {
+  background-image: url("../img/basket-product-item-white.png");
   background-repeat: no-repeat;
   background-position: 93%;
 }
 
-
-
-.dname {
-font-size: 30px;
- font-family: 'Roboto',
- sans-serif;
-font-weight: 700;
-color: white;
-margin-bottom: 15px;
-}
-.sm {
-font-size: 21px;
-font-family: 'Roboto',
-sans-serif;
-font-weight: 700;
-color: white;
-text-transform: uppercase;
-
-}
-.lit {
-font-size: 21px;
-font-family: 'Roboto',
-sans-serif;
-font-weight: 300;
-color: white;
-
-}
-.str {
+.product-description__name {
+  font-size: 30px;
+  font-family: 'Roboto',
+    sans-serif;
+  font-weight: 700;
+  color: white;
   margin-bottom: 15px;
 }
 
+.text-bold-upper {
+  font-size: 21px;
+  font-family: 'Roboto',
+    sans-serif;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
 
+}
+
+.text-light {
+  font-size: 21px;
+  font-family: 'Roboto',
+    sans-serif;
+  font-weight: 300;
+  color: white;
+
+}
+
+.product-description__content-spasing {
+  margin-bottom: 15px;
+}
 
 footer {
-height: 100px;
- padding: 25px 0;
- background-color: rgba(255, 255, 255, 0.75);
+  height: 100px;
+  padding: 25px 0;
+  background-color: rgba(255, 255, 255, 0.75);
 }
