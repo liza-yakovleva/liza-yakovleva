@@ -88,11 +88,61 @@
     </div>
     <div class="row">
 
-      <aside class="col-md-3">ASIDE</aside>
+      <aside class="col-md-3 aside">
+        <h1 class="aside__description-name">Device type</h1>
+        <ul class="aside__description-text">
+        <li class="aside__description-text-li"> <input type="checkbox" name="" class="aside__checkbox" id="text">
+          <label for="text" class="aside__label"></label>Laptop</li>
+          <li class="aside__description-text-li aside__li "><input type="checkbox" name=""
+              class="aside__checkbox"
+              id="text">
+            <label for="text" class="aside__label"></label>Tablet</li>
+        </ul>
+         <h1 class="aside__description-name aside__margin">Color</h1>
+         <ul class="aside__description-text">
+           <li class="aside__description-text-li"><input type="checkbox" name="" class="aside__checkbox" id="text">
+             <label for="text" class="aside__label"></label>Black</li>
+           <li class="aside__description-text-li"><input type="checkbox" name="" class="aside__checkbox" id="text">
+             <label for="text" class="aside__label"></label>Red</li>
+           <li class="aside__description-text-li"><input type="checkbox" name="" class="aside__checkbox" id="text">
+             <label for="text" class="aside__label"></label>Green</li>
+           <li class="aside__description-text-li"><input type="checkbox" name="" class="aside__checkbox" id="text">
+             <label for="text" class="aside__label"></label>Blue</li>
+           <li class="aside__description-text-li aside__li"><input type="checkbox" name=""
+               class="aside__checkbox"
+               id="text">
+             <label for="text" class="aside__label"></label>Orange</li>
+         </ul>
+          <h1 class="aside__description-name aside__margin">RAM</h1>
+          <ul class="aside__description-text">
+            <li class="aside__description-text-li"><input type="checkbox" name="" class="aside__checkbox" id="text">
+              <label for="text" class="aside__label"></label>1GB</li>
+            <li class="aside__description-text-li"><input type="checkbox" name="" class="aside__checkbox" id="text">
+              <label for="text" class="aside__label"></label>2GB</li>
+            <li class="aside__description-text-li"><input type="checkbox" name="" class="aside__checkbox" id="text">
+              <label for="text" class="aside__label"></label>4GB</li>
+            <li class="aside__description-text-li"><input type="checkbox" name="" class="aside__checkbox" id="text">
+              <label for="text" class="aside__label"></label>6GB</li>
+            <li class="aside__description-text-li aside__li "><input type="checkbox" name="" class="aside__checkbox"
+                id="text">
+              <label for="text" class="aside__label"></label>8GB</li>
+          </ul>
+          <span class="aside__text">Show more options ...</span>
+          <form action="app.php" method="post">
+            <input type="submit" class="aside__submit" value="Submit">
+          </form>
+      </aside>
 
 
       <section class="col-md-9">
-
+        <div class="section__nav">
+          <a href="http://" class="section__a">Home page</a><span class="section__span"> > </span>
+          <a href="http://" class="section__a">Products</a><span class="section__span"> > </span>
+          <a href="http://" class="section__a">Laptops and Tablets</a>
+        </div>
+<div class="section__name">
+  Laptops and Tablets
+</div>
 
         <div class="row">
 
@@ -442,12 +492,18 @@
             </div>
           </div>
         </div>
-
+<div class="section__footer">
+  Load more ...
+</div>
       </section>
     </div>
 
   </main>
-  <footer>Footer</footer>
+  <footer>
+    <div class="footer__text">
+      &#169; Copyright 2017
+    </div>
+  </footer>
 
 </body>
 
