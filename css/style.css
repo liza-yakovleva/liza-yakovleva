@@ -325,7 +325,11 @@ margin: 3px 5px;
   transform: translate(775%, -690%);
 }
 
-.product-list-item__item-chosen:hover {
+/* .product-list-item__item-chosen:hover {
+  background-image: url("../img/item-chosen-white.png");
+  background-color: rgb(44, 113, 184);
+} */
+.item-chosen-click {
   background-image: url("../img/item-chosen-white.png");
   background-color: rgb(44, 113, 184);
 }
