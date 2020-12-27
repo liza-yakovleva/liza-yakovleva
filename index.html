@@ -173,6 +173,16 @@
               </div>
               <div class="product-description__price">$599<div id="index-1">25</div>
               </div>
+
+<div class="product-quentity">
+  <button class="decrement-button">-</button>
+  <input type="text" value="1" readonly class="product-quentity-number">
+  <button class="increment-button">+</button>
+</div>
+
+
+
+
               <div class="product-details-add">
                 <button class="product-details-add__det-add more-details">more details</button>
                  <button class="product-details-add__det-add product-details-add__basket-white">add to cart</button>
@@ -210,6 +220,11 @@
               </div>
               <div class="product-description__price">$1250<div id="index-2">99</div>
               </div>
+              <div class="product-quentity">
+                <button class="decrement-button">-</button>
+                <input type="text" value="1" readonly class="product-quentity-number">
+                <button class="increment-button">+</button>
+              </div>
               <div class="product-details-add">
                 <button class="product-details-add__det-add more-details">more details</button>
                 <button class="product-details-add__det-add product-details-add__basket-white">add to cart</button>
@@ -244,6 +259,11 @@
                 </p>
               </div>
               <div class="product-description__price">$399<div id="index-3">50</div>
+              </div>
+              <div class="product-quentity">
+                <button class="decrement-button">-</button>
+                <input type="text" value="1" readonly class="product-quentity-number">
+                <button class="increment-button">+</button>
               </div>
               <div class="product-details-add">
                 <button class="product-details-add__det-add more-details">more details</button>
@@ -284,6 +304,11 @@
               </div>
               <div class="product-description__price">$599<div id="index-4">25</div>
               </div>
+              <div class="product-quentity">
+                <button class="decrement-button">-</button>
+                <input type="text" value="1" readonly class="product-quentity-number">
+                <button class="increment-button">+</button>
+              </div>
               <div class="product-details-add">
                 <button class="product-details-add__det-add more-details">more details</button>
                 <button class="product-details-add__det-add product-details-add__basket-white">add to cart</button>
@@ -321,6 +346,11 @@
               </div>
               <div class="product-description__price">$1250<div id="index-5">99</div>
               </div>
+<div class="product-quentity">
+                <button class="decrement-button">-</button>
+                <input type="text" value="1" readonly class="product-quentity-number">
+                <button class="increment-button">+</button>
+              </div>              
               <div class="product-details-add">
                 <button class="product-details-add__det-add more-details">more details</button>
                 <button class="product-details-add__det-add product-details-add__basket-white">add to cart</button>
@@ -356,6 +386,11 @@
               </div>
               <div class="product-description__price">$399<div id="index-6">50</div>
               </div>
+<div class="product-quentity">
+                <button class="decrement-button">-</button>
+                <input type="text" value="1" readonly class="product-quentity-number">
+                <button class="increment-button">+</button>
+              </div>              
               <div class="product-details-add">
                <button class="product-details-add__det-add more-details">more details</button>
                <button class="product-details-add__det-add product-details-add__basket-white">add to cart</button>
@@ -394,6 +429,11 @@
               </div>
               <div class="product-description__price">$599<div id="index-7">25</div>
               </div>
+<div class="product-quentity">
+                <button class="decrement-button">-</button>
+                <input type="text" value="1" readonly class="product-quentity-number">
+                <button class="increment-button">+</button>
+              </div>              
               <div class="product-details-add">
                 <button class="product-details-add__det-add more-details">more details</button>
                 <button class="product-details-add__det-add product-details-add__basket-white">add to cart</button>
@@ -431,6 +471,11 @@
               </div>
               <div class="product-description__price">$1250<div id="index-8">99</div>
               </div>
+<div class="product-quentity">
+                <button class="decrement-button">-</button>
+                <input type="text" value="1" readonly class="product-quentity-number">
+                <button class="increment-button">+</button>
+              </div>              
               <div class="product-details-add">
                <button class="product-details-add__det-add more-details">more details</button>
                <button class="product-details-add__det-add product-details-add__basket-white">add to cart</button>
@@ -466,6 +511,11 @@
               </div>
               <div class="product-description__price">$399<div id="index-9">50</div>
               </div>
+<div class="product-quentity">
+                <button class="decrement-button">-</button>
+                <input type="text" value="1" readonly class="product-quentity-number">
+                <button class="increment-button">+</button>
+              </div>              
               <div class="product-details-add">
                 <button class="product-details-add__det-add more-details">more details</button>
                 <button class="product-details-add__det-add product-details-add__basket-white">add to cart</button>
@@ -490,19 +540,25 @@
   <div class="modal-block">
     <form class="form">
 <div class="btn-close">X</div>
-<h3>Please call for more details</h3>
+<h3 class="modal-h3">Please call for more details</h3>
 <div class="form-fields">
   <input type="text" placeholder="Your name">
 </div>
 <div class="form-fields">
   <input type="text" placeholder="Your phone">
 </div>
-<button>Please call</button>
+<button class="modal-sub-btn">Please call</button>
     </form>
   </div>
 </div>
 
-
+<form action="app.php" method="post" class="modal-sub modal-sub-hide">
+  <div class="modal-sub-btn-close">X</div>
+  <h3 class="modal-sub-h3">Subscribe to us</h3>
+  <input type="text" class="modal-sub-txt" placeholder="Your Name">
+  <input type="email" class="modal-sub-txt" placeholder="Your email">
+  <button class="modal-sub-btn">Subscribe</button>
+</form>
 
 <script src="app.js"></script>
 </body>
