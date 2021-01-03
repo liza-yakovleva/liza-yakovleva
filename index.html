@@ -4,9 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://kit.fontawesome.com/09c4097ac1.js" crossorigin="anonymous"></script>
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css"> -->
+   <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/css/selectize.default.min.css">
   <title>Shop</title>
 </head>
 
@@ -78,14 +85,28 @@
     </div>
 
   </header>
+  <div class="slider-container">
   <main class="container">
     <div class="row">
-
-      <section class="slider">
-        SLIDER
-      </section>
+<div class="col-md-12">
+      
+             
+        <div class="slider-block">
+          <div>Slider 1</div>
+          <div>Slider 2</div>
+          <div>Slider 3</div>
+          <div>Slider 4</div>
+        </div>
+        
+        </div>
+      
 
     </div>
+
+  </main>
+  </div>
+<main class="container">
+
     <div class="row">
 
       <aside class="col-md-3 aside">
@@ -135,15 +156,28 @@
 
 
       <section class="col-md-9">
+        
         <div class="section__nav">
           <a href="http://" class="section__a">Home page</a><span class="section__span">&#62;</span>
           <a href="http://" class="section__a">Products</a><span class="section__span">&#62;</span>
           <a href="http://" class="section__a">Laptops and Tablets</a>
         </div>
+        <div class="row">
+        <div class="col-md-8">
 <div class="section__name">
   Laptops and Tablets
 </div>
+</div>
+ <div class="col-md-4">
 
+ <select id="select-beast" class="form-control menu-sort">
+   <option value="0" id="option">sort by price</option>
+   <option value="1" id="option">sort by name</option>
+   <option value="2" id="option">sort by date</option>
+   <option value="3" id="option">sort by popularity</option>
+ </select>
+</div>
+ </div>
         <div class="row">
 
           <div class="col-md-4">
@@ -560,6 +594,10 @@
   <button class="modal-sub-btn">Subscribe</button>
 </form>
 
+<script src="select.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="app.js"></script>
 </body>
 
